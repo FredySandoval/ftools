@@ -1,4 +1,6 @@
-# ftools
+
+<img width="798" height="184" alt="Frame 10 (1)" src="https://github.com/user-attachments/assets/35f08e35-6847-4919-9cff-1442bad9308e" />
+
 
 Command-line file clipboard tools for copying, cutting, pasting, deleting, replacing, undoing, and redoing file operations with a JSON Lines history.
 
@@ -6,10 +8,10 @@ Command-line file clipboard tools for copying, cutting, pasting, deleting, repla
 
 | Command | Description |
 | --- | --- |
-| `fcopy FILE...` | Record existing file or directory paths for a later paste. |
-| `fcut FILE...` | Record existing file or directory paths as cut/move sources for a later paste. |
+| `fcopy` | Record existing file or directory paths for a later paste. |
+| `fcut` | Record existing file or directory paths as cut/move sources for a later paste. |
 | `fpaste` | Paste the latest supported history source into the current directory; refuses destination collisions and suggests `freplace`. |
-| `fdelete FILE...` | Move files or directories to temporary recovery storage and record the action. |
+| `fdelete` | Move files or directories to temporary recovery storage and record the action. |
 | `freplace` | Paste into the current directory and recoverably replace destination collisions. |
 | `fundo` | Undo the latest undoable fileclip action. |
 | `fredo` | Redo an undone fileclip action or repeat the latest repeatable action. |
