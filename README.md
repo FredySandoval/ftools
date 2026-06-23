@@ -35,16 +35,16 @@ cargo install --path .
 ## Quick example
 
 ```sh
-fcopy ./notes.txt
-cd /tmp
-fpaste
+fcopy ./notes.txt      # <- Copies one file to private clipboard
+cd /tmp                # <- Change your directory
+fpaste                 # <- you can paste ./notes.txt in the current directory
 
-fcut ./old-name.txt
+fcut ./old-name.txt    # <- will remove this file until paste
 cd ../archive
 fpaste
 
-fdelete ./unwanted.txt
-fundo
+fdelete ./unwanted.txt # <- move file to /tmp
+fundo                  # <- reverts last change
 ```
 
 ## History
